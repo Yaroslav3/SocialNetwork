@@ -1,6 +1,8 @@
 package facebook.network.service;
 import facebook.network.data.Database;
 import facebook.network.model.User;
+import sun.security.provider.certpath.Vertex;
+import vertex.counter.VertexCounter;
 
 import java.util.Arrays;
 
@@ -10,11 +12,17 @@ import java.util.Arrays;
 public class UserService {
     public static void main(String[] args) {
         final User user = new User();
-       getAll();
+      // getAll();
       // getFirst();
       // getLast();
 
-       //todo create method getBy...(all fields);
+      //  final User userByName = g
+
+       // todo create method getBy...(all fields);
+        VertexCounter vertexCounter = new VertexCounter();
+        int unicode = vertexCounter.counterUnicode("test");
+        System.out.println(unicode);
+
     }
 
     private static void getLast() {
@@ -24,7 +32,6 @@ public class UserService {
         for (; i < users.length - 1; i++) {
         }
         System.out.println(users[i]);
-
     }
 
     private static void getFirst() {
